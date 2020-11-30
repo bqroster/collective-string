@@ -1,0 +1,37 @@
+{
+  "name": "collective-string",
+  "version": "1.0.0",
+  "description": "Collective string functions",
+  "main": "build/index.js",
+  "scripts": {
+    "watch": "watch 'npm run dev' src",
+    "dev": "babel src --out-file build/index.js",
+    "build": "npm run dev && npm run uglify",
+    "uglify": "uglifyjs --compress --mangle --output ./build/index.js -- ./build/index.js",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bqroster/collective-string.git"
+  },
+  "keywords": [
+    "string"
+  ],
+  "author": "Jose Burgos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bqroster/collective-string/issues"
+  },
+  "homepage": "https://github.com/bqroster/collective-string#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "jest": "^24.1.0",
+    "uglify-js": "^3.12.0",
+    "watch": "^1.0.2"
+  }
+}
