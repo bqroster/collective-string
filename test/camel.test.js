@@ -24,9 +24,7 @@ describe('Camel Function', () => {
     });
 
     test('camel test with numbers', function () {
-        expect(Str.camel('3gettogglemethod')).toBe('3gettogglemethod');
-        expect(Str.camel('3-get-toggle-method')).toBe('3GetToggleMethod');
-        expect(Str.camel('get-3toggle-method')).toBe('get3toggleMethod');
-        expect(Str.camel('get-toggle-method3')).toBe('getToggleMethod3');
+        expect(Str.camel('3gettogglemethod')).toBe('3gettogglemethod');expect(Str.camel('3-get-toggle-method')).toBe('3GetToggleMethod');
+        expect(Str.camel('get-3toggle-method')).toBe('get3toggleMethod');expect(Str.camel('get-toggle-method3')).toBe('getToggleMethod3');
     });
 });
