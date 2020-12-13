@@ -10,7 +10,7 @@
     "uglify": "uglifyjs --compress --mangle --output ./build/index.js -- ./build/index.js",
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "prepublish": "npm run build",
+    "publish": "npm run build",
     "release": "np"
   },
   "repository": {

@@ -5,6 +5,7 @@ describe('Kebab Function', () => {
         expect(Str.kebab('getToggleMethod')).toBe('get-toggle-method');
         expect(Str.kebab('    getToggleMethod     ')).toBe('get-toggle-method');
         expect(Str.kebab('    -getToggleMethod     ')).toBe('-get-toggle-method');
+        expect(Str.kebab('getToggle-----Method')).toBe('get-toggle------method');
     });
 
     test('kebab test uppercase first letter', function () {
